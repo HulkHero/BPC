@@ -872,18 +872,7 @@ namespace WpfApp2
                             prc.DisableBorderSide(Rectangle.BOTTOM_BORDER);
                             table.AddCell(prc);
                        */
-                            /* 
-                               XmlNode itme = node.SelectSingleNode("Items");
-                               PdfPCell itc = new PdfPCell(new Phrase(itme.InnerText));
-
-                               if (check == false)
-                               {
-
-                                   itc.DisableBorderSide(Rectangle.TOP_BORDER);
-                               }
-                               itc.DisableBorderSide(Rectangle.BOTTOM_BORDER);
-                               table.AddCell(itc);
-                             */
+                           
                             XmlNode kuan = hulk.SelectSingleNode("Quantity");
                             PdfPCell kuanc = new PdfPCell(new Phrase(kuan.InnerText));
                             if (kuan.InnerText == "") { kuan.InnerText = "0"; }
